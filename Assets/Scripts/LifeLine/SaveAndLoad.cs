@@ -129,7 +129,7 @@ public class SaveAndLoad : MonoBehaviour
         //ARDrawManager.instance.AlignToWorldAnchor(_go);
         _go.name = "(loaded) " + _name;
         _go.transform.localPosition = _position;
-        //_go.GetComponent<Renderer>().material = ARDrawManager.instance.SetLoadedLineMaterial(_color);
+        _go.GetComponent<Renderer>().material = ARDrawManager.instance.SetLoadedLineMaterial(_color);
         LineRenderer _line = _go.GetComponent<LineRenderer>();
 
         _line.positionCount = _linePath.Count;

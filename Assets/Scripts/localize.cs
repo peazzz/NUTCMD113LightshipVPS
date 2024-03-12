@@ -8,11 +8,6 @@ public class localize : MonoBehaviour
     public Text AreaText;
     public static bool canDraw;
 
-    void Updata()
-    {
-        transform.up = Vector3.up;//«O«ù««ª½
-    }
-
     void OnTriggerStay(Collider other)
     {
         if (other.gameObject.tag == "center")
